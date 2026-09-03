@@ -1,0 +1,51 @@
+{
+    "name": "e-prop/socialite-nurtur-identity",
+    "description": "Nurtur Identity OAuth2 Provider for Laravel Socialite",
+    "license": "MIT",
+    "keywords": [
+        "nurtur",
+        "identity",
+        "laravel",
+        "oauth",
+        "oidc",
+        "provider",
+        "socialite"
+    ],
+    "authors": [
+        {
+            "name": "Jonathan Tiney",
+            "email": "jonathan.tiney@nurtur.tech"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/e-prop/socialite-nurtur-identity/issues",
+        "source": "https://github.com/e-prop/socialite-nurtur-identity"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "socialiteproviders/manager": "^4.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialiteProviders\\NurturIdentity\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocialiteProviders\\NurturIdentity\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
